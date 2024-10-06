@@ -223,3 +223,23 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      description:
+      image:
+        path:
+        alt:
+      categories:
+      tags:
+    posts:
+      description:
+      image:
+        path:
+        alt:
+      categories:
+      tags:
+      published: false
+      sitemap: false
+      pin: false
