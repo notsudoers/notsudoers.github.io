@@ -3,15 +3,15 @@ layout: post
 title: My Dotfiles
 date: 2024-10-06 09:49 +0700
 description: "Customize Your Dotfiles for a Seamless Setup on New Servers!"
-# image:
-#   path: "../assets/img/posts/Dotfiles_dark.png"
-#   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+image:
+  path: "../assets/img/posts/Dotfiles.png"
+  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
 #   alt: "source: Trust me bro"
-categories: 
+categories:
   - Linux
   - Customization
   - Tutorial
-tags: 
+tags:
   - shell
   - dotfiles
   - git
@@ -19,12 +19,15 @@ published: true
 sitemap: false
 pin: true
 ---
+
 Hey everyone! Today, I want to share my personal dotfiles setup that I've crafted for a smooth and efficient workflow. If you’re diving into a new server or just looking to streamline your daily tasks, my dotfiles might just be what you need!
 
 ## What Are Dotfiles?
+
 First off, dotfiles are configuration files for your system and applications. They’re usually hidden (with suffix dot ".") and can control everything from your shell preferences to editor settings. By customizing them, you can create a consistent and efficient environment tailored to your needs.
 
 ## Why Use My Dotfiles?
+
 I’ve put together a collection of dotfiles that reflects my workflow, which includes:
 
 - Terminal Customization: From bash to oh-my-posh, I’ve tweaked my prompt to be informative yet clean.
@@ -123,10 +126,12 @@ Lastly change the value of git in `~/.gitconfig` to fit your settings.
 ## Final look
 
 ### Github repository
-![Light mode only](../assets/img/posts/Dotfiles_light.png){: .light }
-![Dark mode only](../assets/img/posts/Dotfiles_dark.png){: .dark }
+
+![Light mode only](../assets/img/posts/Dotfiles.png){: .light }
+![Dark mode only](../assets/img/posts/Dotfiles.png){: .dark }
 
 ### Neovim
+
 ![Light mode only](../assets/img/posts/Nvim_light.png){: .light }
 ![Dark mode only](../assets/img/posts/Nvim_dark.png){: .dark }
 
