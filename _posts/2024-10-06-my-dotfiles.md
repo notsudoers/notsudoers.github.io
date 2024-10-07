@@ -4,9 +4,9 @@ title: My Dotfiles
 date: 2024-10-06 09:49 +0700
 description: "Customize Your Dotfiles for a Seamless Setup on New Servers!"
 # image:
-#   path: https://chirpy-img.netlify.app/commons/devices-mockup.png
+#   path: "../assets/img/posts/Dotfiles_dark.png"
 #   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-#   alt: test
+#   alt: "source: Trust me bro"
 categories: 
   - Linux
   - Customization
@@ -81,7 +81,7 @@ sudo chmod +x /usr/local/bin/oh-my-posh
 #### Clone this repository
 
 ```sh
-git clone https://gitlab.com/alwaystuck/my-dotfiles.git && cd my-dotfiles
+git clone https://gitlab.com/notsudoers/my-dotfiles.git && cd my-dotfiles
 ```
 
 #### Symlink all configuration to the home directory
@@ -120,6 +120,15 @@ Run `:MasonInstallAll` command after lazy.nvim finishes downloading plugins.
 
 Lastly change the value of git in `~/.gitconfig` to fit your settings.
 
+## Final look
+
+### Github repository
+![Light mode only](../assets/img/posts/Dotfiles_light.png){: .light }
+![Dark mode only](../assets/img/posts/Dotfiles_dark.png){: .dark }
+
+### Neovim
+![Light mode only](../assets/img/posts/Nvim_light.png){: .light }
+![Dark mode only](../assets/img/posts/Nvim_dark.png){: .dark }
 
 ## Conclusion
 
