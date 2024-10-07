@@ -12,18 +12,12 @@
 /* append your custom style below */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-#topbar-title {
-  font-family: "JetBrains Mono", sans-serif;
-}
-
-div#topbar-title {
-  font-family: "JetBrains Mono", sans-serif;
-}
-
 pre {
   font-family: "JetBrains Mono", monospace;
 }
 
-
+#topbar-title, #sidebar-trigger, #search-trigger {
+  font-family: "JetBrains Mono", sans-serif;
+}
 
 
