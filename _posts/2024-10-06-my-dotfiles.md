@@ -44,6 +44,9 @@ I’ve put together a collection of dotfiles that reflects my workflow, which in
 
 #### For Arch Based
 
+<details markdown="1">
+<summary>Show</summary>
+
 ```sh
 sudo pacman -Syy && \
 sudo pacman -S --noconfirm base-devel git wget curl unzip npm bash-completion \
@@ -54,7 +57,12 @@ makepkg -si --noconfirm && \
 cd
 ```
 
+</details>
+
 #### For Debian Based
+
+<details markdown="1">
+<summary>Show</summary>
 
 ```sh
 curl -fsSL https://deb.nodesource.com/setup_lts.x -o nodesource_setup.sh && \
@@ -63,7 +71,12 @@ sudo apt install -y git wget curl unzip nodejs bash-completion ripgrep python3-v
 libncursesw5-dev autotools-dev autoconf automake build-essential libcap-dev libsensors-dev
 ```
 
+</details>
+
 #### For RHEL Based
+
+<details markdown="1">
+<summary>Show</summary>
 
 ```sh
 sudo dnf update -y && \
@@ -73,6 +86,21 @@ sudo bash nodesource_setup.sh && \
 sudo dnf install -y git wget curl tar unzip fontconfig nodejs bash-completion ripgrep python3-virtualenv \
 ncurses-devel automake autoconf gcc libcap-devel lm_sensors-devel --skip-broken
 ```
+
+</details>
+
+#### For BSD Based System
+
+<details markdown="1">
+<summary>Show</summary>
+
+```sh
+pkg update && \
+pkg install -y bash bash-completion bash-completion-freebsd \
+git neovim npm-node20 ripgrep py311-virtualenv fontconfig automake ncurses gcc autotools autoconf
+```
+
+</details>
 
 ### Install neovim
 
@@ -88,6 +116,16 @@ sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/
 sudo chmod +x /usr/local/bin/oh-my-posh
 ```
 
+<details markdown="1">
+<summary>For BSD</summary>
+
+```sh
+fetch https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-freebsd-amd64 -o /usr/local/bin/oh-my-posh && \
+chmod +x /usr/local/bin/oh-my-posh
+```
+
+</details>
+
 ### Install htop
 
 ```sh
@@ -100,6 +138,22 @@ make -j`nproc` &&\
 sudo make install &&
 cd
 ```
+
+<details markdown="1">
+<summary>For BSD</summary>
+
+```sh
+fetch https://github.com/htop-dev/htop/releases/download/3.3.0/htop-3.3.0.tar.xz &&\
+tar xvf htop-3.3.0.tar.xz &&\
+cd htop-3.3.0 &&\
+./autogen.sh &&\
+./configure --enable-unicode --prefix=/usr &&\
+make -j`nproc` &&\
+make install &&
+cd
+```
+
+</details>
 
 ### Configure Dotfiles
 
@@ -116,6 +170,7 @@ cd my-dotfiles
 ln -s $(pwd)/.gitconfig $HOME/.gitconfig
 ln -s $(pwd)/.poshthemes $HOME/.poshthemes
 ln -s $(pwd)/.inputrc $HOME/.inputrc
+ln -s $(pwd)/.bash_profile $HOME/.bash_profile
 ln -s $(pwd)/.fonts $HOME/.fonts
 mkdir -p $HOME/{.config,.ssh}
 ln -s $(pwd)/.config/* $HOME/.config/
@@ -129,6 +184,18 @@ echo -e 'export PATH="$PATH:/opt/nvim-linux64/bin"' >> $HOME/.bashrc
 echo -e 'eval "$(oh-my-posh init bash --config ~/.poshthemes/huvix.omp.yaml)" \nalias cl="clear"' >> $HOME/.bashrc
 ```
 
+<details markdown="1">
+<summary>For BSD</summary>
+
+```sh
+cd
+fetch https://gist.githubusercontent.com/notsudoers/574e5da0a1396dc4d727d823c8087046/raw/2826f0c7aae15e13f05e41006ad1b266ef14fa25/.bashrc
+echo -e '\neval "$(oh-my-posh init bash --config ~/.poshthemes/huvix.omp.yaml)"' >> $HOME/.bashrc
+pw usermod $USER -s $(which bash)
+```
+
+</details>
+
 #### Refresh font cache
 
 ```sh
@@ -138,7 +205,7 @@ fc-cache -f -v
 #### Load new configuration
 
 ```sh
-source ~/.bashrc
+. ~/.bashrc
 ```
 
 #### Init neovim configuration first to installing all plugins stuff
