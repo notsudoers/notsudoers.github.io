@@ -7,6 +7,9 @@ order: 4
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip } -->
 
-> Jangan adalah sebuah larangan bukan sayur.
+![About Me](../assets/img/avatar/animal_chara_computer_penguin.png){: width="260" height="260" }
+_About Me_
 
-Sincerely, [@notsudoers](https://github.com/notsudoers)
+> Just penguin watching you from laptop
+
+<!-- Sincerely, [@notsudoers](https://github.com/notsudoers) -->
