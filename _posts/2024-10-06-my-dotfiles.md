@@ -36,6 +36,7 @@ I’ve put together a collection of dotfiles that reflects my workflow, which in
   - ssh client config
   - inputrc to enable [Tab] complete using bash
   - beautiful htoprc
+  - yay package manager for arch based distro
 
 ## Let's get started
 
@@ -45,7 +46,8 @@ I’ve put together a collection of dotfiles that reflects my workflow, which in
 
 ```sh
 sudo pacman -Syy && \
-sudo pacman -S --noconfirm base-devel git wget curl unzip htop npm bash-completion ripgrep python3-venv && \
+sudo pacman -S --noconfirm base-devel git wget curl unzip npm bash-completion \
+ripgrep python-virtualenv lm_sensors fontconfig && \
 git clone https://aur.archlinux.org/yay.git && \
 cd yay && \
 makepkg -si --noconfirm && \
@@ -95,7 +97,7 @@ cd htop-3.3.0 &&\
 ./autogen.sh &&\
 ./configure --enable-sensors --enable-capabilities --prefix=/usr &&\
 make -j`nproc` &&\
-make install &&
+sudo make install &&
 cd
 ```
 
