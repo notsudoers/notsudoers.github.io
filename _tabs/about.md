@@ -10,6 +10,6 @@ order: 4
 ![About Me](../assets/img/avatar/animal_chara_computer_penguin.png){: width="260" height="260" }
 _About Me_
 
-> Just penguin watching you from laptop
+> Just a penguin watching you
 
 <!-- Sincerely, [@notsudoers](https://github.com/notsudoers) -->
