@@ -36,7 +36,7 @@ I’ve put together a collection of dotfiles that reflects my workflow, which in
   - ssh client config
   - inputrc to enable [Tab] complete using bash
   - beautiful htoprc
-  - yay package manager for arch based distro
+  - yet another yogurt (yay) package manager for arch based distro
 
 ## Let's get started
 
