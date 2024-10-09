@@ -5,8 +5,8 @@ date: 2024-10-06 09:49 +0700
 description: "Customize Your Dotfiles for a Seamless Setup on New Servers!"
 image:
   path: "../assets/img/posts/animal_chara_computer_penguin.png"
-  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-#   alt: "source: Trust me bro"
+  lqip: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAABC0lEQVR4nI2Qu0rDUABAz71p2qhNoYRWSHVwKYgPBKEVF4eKDoLoR+jgF9jVVdwy+RUiOGapk+DQxUeHghWhaFUiTZqkj1s/oEvPeOAsB6ZETJjzBwuiM3R9gSi847JyCyAnu8E1hnmB0E5Jpm6o1ioACYDVcnnekEbOs4rWZ/d9bxjrDEY6MpMXfdQR4EqAoR/v+363nmg9unbtKr1rBWwWCwxHCvnXrtjZ7KIEeH2qu2GvF6uR0rzfb3aMHzZyKcb9kEIyXl4pbR0mnhvNA9NMHzuOM/vV6SCE4O2jTd5scH+yTX5uPfK90ppoNFvVTMZc0qSIlGIMgFKkZ3SllHrpBkGtbdvNaTfyDx0lYbxxHC8QAAAAAElFTkSuQmCC
+  # alt: "source: Trust me bro"
 categories:
   - Linux
   - Customization
