@@ -65,9 +65,11 @@ cd
 <summary>Show</summary>
 
 ```sh
+sudo apt update && \
+sudo apt install -y git wget curl && \
 curl -fsSL https://deb.nodesource.com/setup_lts.x -o nodesource_setup.sh && \
 sudo bash nodesource_setup.sh && \
-sudo apt install -y git wget curl unzip nodejs bash-completion ripgrep python3-venv \
+sudo apt install -y unzip nodejs bash-completion ripgrep python3-venv \
 libncursesw5-dev autotools-dev autoconf automake build-essential libcap-dev libsensors-dev
 ```
 
@@ -80,10 +82,10 @@ libncursesw5-dev autotools-dev autoconf automake build-essential libcap-dev libs
 
 ```sh
 sudo dnf update -y && \
-sudo dnf install -y epel-release && \
+sudo dnf install -y epel-release git wget curl && \
 curl -fsSL https://rpm.nodesource.com/setup_lts.x -o nodesource_setup.sh && \
 sudo bash nodesource_setup.sh && \
-sudo dnf install -y git wget curl tar unzip fontconfig nodejs bash-completion ripgrep python3-virtualenv \
+sudo dnf install -y tar unzip fontconfig nodejs bash-completion ripgrep python3-virtualenv \
 ncurses-devel automake autoconf gcc libcap-devel lm_sensors-devel --skip-broken
 ```
 
